@@ -1,3 +1,42 @@
 body {
   background-color: lightblue;
 }
+
+.carousel{
+  margin: 20px auto;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel_group{
+  
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: .3em;
+  animation: spin 45s infinite linear;
+  padding-right: .3em;
+  
+}
+
+.card{
+   height: 0 0 5em;
+   padding: .2em;
+   background-color: aliceblue;
+   border-radius: .3em;
+   text-align: center;
+   align-content: center;
+   
+}
+
+@keyframes spin{
+  from {translate: 0;}  
+  to {translate: -100%;}
+}
